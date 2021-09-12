@@ -14,7 +14,7 @@ jobs:
         uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
         with:
           github_access_token: ${{ secrets.ACCESS_TOKEN }}
-          build_configuration: staging
+          build_configuration: production
           base_href: /angular12-number-runner/
           deploy_branch: gh-pages
           angular_dist_build_folder: dist/angular12-number-runner
