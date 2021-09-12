@@ -17,4 +17,4 @@ jobs:
           build_configuration: production
           base_href: /angular12-number-runner/
           deploy_branch: gh-pages
-          angular_dist_build_folder: dist/angular12-number-runner
+          angular_dist_build_folder: dist/case1
