@@ -13,7 +13,7 @@ jobs:
       - name: case1 deploy
         uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
         with:
-          github_access_token: ${{ secrets.ACCESS_TOKEN }}
+          github_access_token: ${{ secrets.GITHUB_TOKEN }}
           build_configuration: production
           base_href: /angular12-number-runner/
           deploy_branch: gh-pages
