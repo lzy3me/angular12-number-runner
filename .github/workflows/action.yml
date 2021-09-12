@@ -1,2 +1,0 @@
-name: case1 Deploy gh-page Action
-uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
