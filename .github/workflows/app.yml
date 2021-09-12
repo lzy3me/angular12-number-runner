@@ -1,2 +1,20 @@
-- name: Deploy gh-pages
-  uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
+name: Deploy gh-pages
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: case1 deploy
+        uses: AhsanAyaz/angular-deploy-gh-pages-actions@v1.3.2
+        with:
+          github_access_token: ${{ secrets.ACCESS_TOKEN }}
+          build_configuration: staging
+          base_href: /angular12-number-runner/
+          deploy_branch: gh-pages
+          angular_dist_build_folder: dist/angular12-number-runner
